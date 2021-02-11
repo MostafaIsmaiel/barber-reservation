@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barber</title>
+    <link rel="stylesheet" href="vendor/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/CSS/animate.css">
+    <link rel="stylesheet" href="vendor/CSS/vegas.min.css">
+    <link rel="stylesheet" href="vendor/CSS/nice-select.css">
+    <link rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css">
+    <link rel="stylesheet" href="/vendor/sass/dist/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+  <div id="appoint">
+      <div class="appointbg">
+        </div>
+        <div class="appointcover">
+          <div class="appoint-info text-center ">
+              <div class="container">
+                    <div class="row">
+                      <h3 class="col-12">Make an Appointment</h3>
+                      <div class="col-lg-6 marg">
+                          <input id="datepicker" width="100%" placeholder="Date" />
+                      </div>
+                      <div class="col-lg-6 marg">
+                          <input id="timepicker" width="100%" placeholder="Time" />
+                      </div>
+                      <div class="col-lg-6 marg">
+                          <select class="wide" id='chservice'>
+                              <option value='0' selected disabled>Choose Service</option>
+                              <option value='1'>Choose Service 1</option>
+                              <option value='2'>Choose Service 2</option>
+                              <option value='3'>Choose Service 3</option>
+                            </select>
+                      </div>
+                      <div class="col-lg-6 marg">
+                          <select class="wide" id='chbarber'>
+                              <option value='0' selected disabled>Choose Barber</option>
+                              <option value='1'>Zaki</option>
+                              <option value='2'>Ronky</option>
+                              <option value='3'>Kalu</option>
+                            </select>
+                      </div>
+                      <div class="col-lg-6 marg">
+                        <input class="finp" type="text" placeholder="Your name">
+                      </div>
+                      <div class="col-lg-6 marg">
+                        <input class="finp" type="text" placeholder="Phon no">
+                      </div>
+                      <div class="col-12 marg">
+                        <input class="finp" type="email" placeholder="Your email">
+                      </div>
+                      <div class="col-12">
+                        <button class="btn sbtn" type="submit">Submit</button>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+    </div>
+  </div>
+<!--Start Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="https://colorlib.com/preview/theme/thebarber/img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item ">
+            <a class="nav-link active selector" id="home-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link selector" id="about-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link selector" id="service-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link selector" id="gallery-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link selector" id="cutter-link" href="#">Cutter Masters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link selector" id="contact-link" href="#">Contact</a>
+            </li>
+        </ul>
+          <button class="btn btn-outline-light btn1 cash" style="width: 200px;">Make an Appointment</button>
+      </div>
+  </div>
+</nav>
+<!--End Nav Bar-->
+<!--Start Section wallpaper-->
+<section class="wallpaper" id="home">
+    <div class="overlay"></div>
+   <div class="container">
+       <div class="row">
+           <div class="col-xs-6 text-center ha">
+               <div>
+                    <img src="https://colorlib.com/preview/theme/thebarber/img/banner/barber_text.png" alt="barber">
+            <h3>Best Barber In <br>
+                 Your Town</h3>
+            <p>Professional Care</p>
+               </div>
+           
+           </div>
+       </div>
+   </div>
+</section>
+<!--End Section wallpaper-->
+<!--Start Section About Us-->
+<section class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 p-5">
+        <div class="part1" data-tilt data-tilt-max="5" data-tilt-speed="900" data-tilt-perspective="500">
+          <div class="hour text-center p-4">
+              <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+              <h3>Opening Hour</h3>
+            <p>
+                Mon-Fri (9.00-11.00)<br/>
+                Sat (10.00-4.00)
+            </p>
+          </div>
+          <img src="https://colorlib.com/preview/theme/thebarber/img/about/about_lft.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="part2 col-sm-6 p-5">
+        <h6>About Us</h6>
+        <h3>Experienced and<br>
+            Traditional Stylish<br>
+            Barber Shop</h3>
+        <p>Inspires employees and organizations to support causes they care
+            about. We do this to bring more resources to the nonprofits that are
+            changing our world.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Section About Us-->
+<!--Start Section Service-->
+<section class="service" id="service">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 serv text-center">
+          <i class="fa fa-scissors fa-3x" aria-hidden="true"></i>
+          <h3>Our Service</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="app">
+  <div class="container">
+    <div class="row">
+      <div class="t">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-12">
+                    <div class="unline">
+              <div class="style">
+                <img src="https://colorlib.com/preview/theme/thebarber/img/service/1.png" alt="">
+                <span>Men’s Facial</span>
+              </div>
+              <div class="para">
+                <p>………………………..$15</p>
+              </div>
+            </div>
+            </div>
+        <div class="col-12">
+        <div class="unline">
+          <div class="style">
+            <img src="https://colorlib.com/preview/theme/thebarber/img/service/2.png" alt="">
+            <span>Clean Cut</span>
+          </div>
+          <div class="para">
+            <p>………………………..$15</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-12">
+            <div class="unline">
+              <div class="style">
+                <img src="https://colorlib.com/preview/theme/thebarber/img/service/3.png" alt="">
+                <span>Close Shave</span>
+              </div>
+              <div class="para">
+                <p>………………………..$15</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-12">
+                <div class="unline">
+                  <div class="style">
+                    <img src="https://colorlib.com/preview/theme/thebarber/img/service/4.png" alt="">
+                    <span>Razor Cut</span>
+                  </div>
+                  <div class="para">
+                    <p>………………………..$15</p>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12">
+                    <div class="unline">
+                      <div class="style">
+                        <img src="https://colorlib.com/preview/theme/thebarber/img/service/5.png" alt="">
+                        <span>Face Massage</span>
+                      </div>
+                      <div class="para">
+                        <p>………………………..$15</p>
+                      </div>
+                    </div>
+      </div>
+    </div>
+  <div class="col-md-6">
+      <div class="col-12">
+          <div class="unline">
+            <div class="style">
+              <img src="https://colorlib.com/preview/theme/thebarber/img/service/6.png" alt="">
+              <span>Classic haircut</span>
+            </div>
+            <div class="para">
+              <p>………………………..$15</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-12">
+              <div class="unline">
+                <div class="style">
+                  <img src="https://colorlib.com/preview/theme/thebarber/img/service/7.png" alt="">
+                  <span>Haircut and shampoo</span>
+                </div>
+                <div class="para">
+                  <p>………………………..$15</p>
+                </div>
+              </div>
+              </div>
+              <div class="col-12">
+                  <div class="unline">
+                    <div class="style">
+                      <img src="https://colorlib.com/preview/theme/thebarber/img/service/8.png" alt="">
+                      <span>Hair treatment</span>
+                    </div>
+                    <div class="para">
+                      <p>………………………..$15</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="unline">
+                        <div class="style">
+                          <img src="https://colorlib.com/preview/theme/thebarber/img/service/9.png" alt="">
+                          <span>Beard trimming</span>
+                        </div>
+                        <div class="para">
+                          <p>………………………..$15</p>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="unline">
+                      <div class="style">
+                        <img src="https://colorlib.com/preview/theme/thebarber/img/service/10.png" alt="">
+                          <span>Beard and moustache</span>
+                        </div>
+                <div class="para">
+              <p>………………………..$15</p>
+      </div>
+  </div>
+</div>
+</div>
+        </div>
+        <div class="col-12 buttonhl">
+          <div>
+            <a class="btn cash">Make an Appointment</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Section Service-->
+<!--Start Section Gallery-->
+<section class="ourg" id="gallery">
+  <div class="col-12 text-center">
+    <i class="fa fa-scissors fa-3x" aria-hidden="true"></i>
+    <h3>Our Gallery</h3>
+</div>
+<div id="carouselExampleControls" class="carousel slide text-center gallery" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://colorlib.com/preview/theme/thebarber/img/gallery/1.png" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://colorlib.com/preview/theme/thebarber/img/gallery/2.png" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://colorlib.com/preview/theme/thebarber/img/gallery/3.png" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+<!--End Section Gallery-->
+<!--Start Section video-->
+<section class="video">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 bg">
+        <div class="videoinfo">
+            <div class="info">
+                <h6>How It Work</h6>
+                <h3>Watch the Video<br>
+                    How we Work?</h3>
+                <p>Inspires employees and organizations to support causes they care<br>
+                    about. We do this to bring more resources to the nonprofits that are<br>
+                    changing our world.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 px-0 img">
+        <div>
+          <img class="w-100" src="https://colorlib.com/preview/theme/thebarber/img/gallery/video.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Section video-->
+<!--Start Section Cutter Masters-->
+<section class="cutter" id="cutter">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 text-center ourc">
+            <i class="fa fa-scissors fa-3x" aria-hidden="true"></i>
+            <h3>Our Cutter Masters </h3>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="master text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xl-3">
+        <div class="teamsocial">
+            <div>
+                <img src="https://colorlib.com/preview/theme/thebarber/img/team/1.png" alt="">
+                <div class="social">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="team">
+                <h6>Macau Wilium</h6>
+                <p>Massage Master</p>
+              </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="teamsocial">
+            <div>
+                <img src="https://colorlib.com/preview/theme/thebarber/img/team/2.png" alt="">
+              </div>
+              <div class="social">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div class="team">
+                <h6>Dan Jacky</h6>
+                <p>Mens Cut</p>
+              </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="teamsocial">
+            <div>
+                <img src="https://colorlib.com/preview/theme/thebarber/img/team/3.png" alt="">
+              </div>
+              <div class="social">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div class="team">
+                <h6>Luka Luka</h6>
+                <p>Mens Cut</p>
+              </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="teamsocial">
+            <div>
+                <img src="https://colorlib.com/preview/theme/thebarber/img/team/4.png" alt="">
+              </div>
+              <div class="social">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div class="team">
+                <h6>Rona Dana</h6>
+                <p>Ladies Cut</p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Start Section Cutter Masters-->
+<!--Start Section Find US-->
+<section class="findus" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="col-sm-5 col-xs-6 findusinfo ">
+          <div class=" findinfo">
+              <h2>How to Find Us</h2>
+              <div class="all-data">
+                  <div class="find-data">
+                      <div class="icon">
+                          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                          <div class="find-text">
+                          <h3>Location</h3>
+                          <p>200, A-block, Green road, USA</p>
+                      </div>
+                    </div>
+                    <div class="find-data">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                          </div>
+                            <div class="find-text">
+                            <h3>Call Us</h3>
+                            <p>+10 378 478 2789</p>
+                      </div>
+                    </div>
+                    <div class="find-data">
+                         <div class="icon">
+                              <i class="far fa-paper-plane" aria-hidden="true"></i>
+                           </div>
+                              <div class="find-text">
+                              <h3>Mail Us</h3>
+                              <p>contact@barbershop.com</p>
+                         </div>
+                      </div>
+                       <div class="mp">
+                        <a class="btn text-center cash">Make an Appointment</a>
+                  </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Section Find US-->
+<!--Start Section Footer-->
+<footer class="footer">
+  <div class="footer-top">
+          <div class="container">
+            <div class="row">
+                  <div class="col-sm-6 col-md-3 footer-tab">
+                    <div class="footer-widget">
+                      <h3>
+                          Join With Us
+                      </h3>
+                      <P class="footer-text">
+                        <a href="#" class="cash">Make Appointment</a><br>
+                        <a href="#">+10 378 478 2789</a>
+                      </P>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 footer-tab">
+                      <div class="footer-widget">
+                          <h3>
+                              Address
+                          </h3>
+                          <P>200, A-block, Green road, USA <br>
+                            +10 367 267 2678 <br>
+                            <a href="#">contact@nonprofit.com</a>
+                          </p>
+                          <div class="social">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2 footer-tab">
+                      <div class="footer-widget">
+                          <h3>
+                              Navigation
+                          </h3>
+                          <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">News</a></li>
+                          </ul>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 footer-tab">
+                      <div class="footer-widget">
+                          <h3>
+                              Newsletter
+                          </h3>
+                          <form action="">
+                            <input placeholder="Enter your mail" type="text">
+                            <button type="submit">Sign Up</button>
+                          </form>
+                          <p>Subscribe newsletter to get updates</p>
+                        </div>
+                  </div>
+
+            </div>
+          </div>
+  </div>
+  <div class="copyright">
+    <div class="container cp">
+        <div class="fotter-border"></div>
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>
+                Copyright ©2019 All rights reserved | This template is made with
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://www.facebook.com/Eacresta" target="_blank">Mostafa Ismaiel</a>
+            </p>
+        </div>
+        </div>
+        </div>
+      </div>
+</footer>
+<span id="to-top" title="To Top"><i class="fas fa-arrow-circle-up"></i></span>
+<!--End Section Footer-->
+<script src="vendor/js/jq.js"> </script>
+<script src="vendor/js/bootstrap.min.js"></script>
+<script src="vendor/js/wow.min.js"></script>
+<script src="vendor/js/vegas.min.js"></script>
+<script src="vendor/js/jquery.nice-select.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script src="vendor/js/js.js"></script>
+<script src="vendor/js/tilit.min.js"></script>
+</body>
+</html>
