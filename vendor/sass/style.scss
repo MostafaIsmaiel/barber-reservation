@@ -650,7 +650,7 @@ html{
                 margin-bottom: 40px;
                 font-family: $mainFont;
             }
-            ul{
+            .navigation-list{
                 padding-left: 0%;
                 li{
                     padding-bottom: 20px;
@@ -672,14 +672,20 @@ html{
             }
             .social{
                 margin-top: 30px;
-                i{
-                    @include transition(0.1s);
-                    margin-left: 10px;
-                    color:#bababa ;
-                    cursor: pointer;
-                    &:hover{
-                        color: $mainColor;
-                        font-size: 18px;
+                .social-list{
+                    li {
+                        display: inline-block;
+                        width: 25px;
+                        i{
+                            @include transition(0.1s);
+                            margin-left: 10px;
+                            color:#bababa ;
+                            cursor: pointer;
+                            &:hover{
+                                color: $mainColor;
+                                font-size: 18px;
+                            }
+                        }
                     }
                 }
             }
@@ -717,6 +723,9 @@ html{
             border-top: 1px solid #bababa;
             .row{
                 margin: 0;
+            }
+            i {
+                color: rgb(186, 0, 0);
             }
         }
         a{
